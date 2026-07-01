@@ -3,9 +3,19 @@
  */
 package numer0n;
 
-public class App {
+import numer0n.service.impl.GameManagerImpl;
+import numer0n.factory.service.GameManagerFactory;
+import numer0n.service.GameManager;
+
+public class  App {
 
     public static void main(String[] args) {
+        GameManager gameManager=GameManagerFactory.create();
+        gameManager.start();
+      
+            
+        
+       
         // ゲームを開始
     }
 }
