@@ -4,12 +4,16 @@
 package numer0n;
 
 import numer0n.service.impl.GameManagerImpl;
+import numer0n.service.GameManager;
 
 public class App {
 
     public static void main(String[] args) {
-        GameManagerImpl gameManagerImpl=new GameManagerImpl();
-        gameManagerImpl.start();
+        GameManager gameManager=new GameManagerImpl();
+        gameManager.start();
+            
+        
+       
         // ゲームを開始
     }
 }
